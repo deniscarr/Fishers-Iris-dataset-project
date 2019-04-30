@@ -1,29 +1,40 @@
 Fisher's Iris data set
 ----------------------------------------------------------------
 
-This is the background research and investigations carried out on the the Fisher's Iris Dataset prior to beginning to code a Python application to demonstate some of the datset's capabilities. 
+This is the background research carried out on the the Fisher's Iris Dataset, prior to beginning to investigate the data set by creating a Python application to demonstate some of the dataset's capabilities. 
+
 
 RESEARCH
 ----------------------------------------------------------------
 
+
 Summary Of The Fisher's Iris Dataset
 --------------------------------------------
-The Iris Flower Dataset is a popular multivariate dataset that was introduced by R.A. Fisher as an example for discriminant analysis. 
 
-The dataset consists of 50 samples from each of three species of Iris flowers (Iris setosa, Iris virginica and Iris versicolor). 
-The dataset reports on four characteristics of 50 samples from each of three species of Iris flowers. These characteristics are sepal length, sepal width, petal length, and petal width. The goal of a discriminant analysis is to produce a simple function that, given the four measurements, will classify a flower correctly. This is the beginning of creating "predictors" in order to try to make a more educated guess on a record in a dataset.
+The Iris flower data set is a popular multivariate dataset created by British statistician and geneticist Ronald Aylmer Fisher, as an example of discriminant analysis. 
 
-Edgar Anderson collected data on 3 different iris species on the Gasp´e Peninsula in Québec province in eastern Canada 
-Ronald Fisher used Anderson’s data to see if linear regression could be used to could be used to “maximize the ratio of the difference between the specific means to the standard deviations within species.”
+The dataset consists of 150 cases (rows) and 5 variables (columns) named Sepal.Length, Sepal.Width, Petal.Length, Petal.Width, and Species of three species of the Iris flower: the Iris setosa, the Iris virginica and the Iris versicolor. 
 
-Each specimen was collected on the same day, collected by the same person and measured using the same instruments
+The goal of this discriminant analysis is to produce a simple function that, given the four measurements, will classify a flower correctly. This is the beginning of creating "predictors" in order to try to make a more accurate guess on a record in a dataset.
+
+An American botanist, Edgar Anderson collected data on the 3 different Iris species on the Gasp´e Peninsula in Québec province in eastern Canada in 1935. Each specimen was collected on the same day, collected by the same person and measured using the same instruments.
+
+In 1936, Ronald Fisher used Anderson’s data to see if linear regression could be used to could be used to “maximize the ratio of the difference between the specific means to the standard deviations within species.”
+
 
 
 
 Investigations Into The Fisher's Iris Dataset
 ----------------------------------------------------
 
+This investigation aimed to express and display some of the key Fisher's Iris Dataset capabilities through the method of the creation of a Python software application with additional information included in code comments.
 
+
+
+TO RUN PROGRAM
+1. Download fishers.py and iris.csv in same directory
+2. Ensure Python is installed on your computer and enter command: python fishers.py
+3. Follow menu options on screen
 
 
 REFERENCES
@@ -35,71 +46,128 @@ Website title:	Gist
 URL:	https://gist.github.com/curran/a08a1080b88344b0c8a7
 
 
-http://archive.ics.uci.edu/ml/datasets/iris
+Article title:	UCI Machine Learning Repository: Iris Data Set
+Website title:	Archive.ics.uci.edu
+URL:	http://archive.ics.uci.edu/ml/datasets/iris
 
-https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342
 
-https://github.com/RitRa/Project2018-iris
+Article title:	Basic Analysis of the Iris Data set Using Python
+Website title:	Medium
+URL:	https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342
 
-https://rstudio-pubs-static.s3.amazonaws.com/205883_b658730c12d14aa6996fe2f6c612c65f.html
 
-https://support.sas.com/documentation/cdl/en/statug/63962/HTML/default/viewer.htmstatug_sashelp_sect007.htm
+Article title:	RitRa/Project2018-iris
+Website title:	GitHub
+URL:	https://github.com/RitRa/Project2018-iris
 
-http://www.randomservices.org/random/data/Fisher.html
 
-iris project
-https://rstudio-pubs-static.s3.amazonaws.com/205883_b658730c12d14aa6996fe2f6c612c65f.html
+Author	Kyrion Dickerson
+Article title:	Fisher’s Irises
+Website title:	Rstudio-pubs-static.s3.amazonaws.com
+URL:	https://rstudio-pubs-static.s3.amazonaws.com/205883_b658730c12d14aa6996fe2f6c612c65f.html
+
+
+Article title:	Fisher's Iris Data
+Website title:	Randomservices.org
+URL:	http://www.randomservices.org/random/data/Fisher.html
+
+
+Article title:	IRIS Dataset Analysis (Python)
+Website title:	Ritvik Raj
+URL:	https://rajritvikblog.wordpress.com/2017/06/29/iris-dataset-analysis-python/
+
  
-python iris project
-https://rajritvikblog.wordpress.com/2017/06/29/iris-dataset-analysis-python/
+Article title:	Get the minimum value of column in python pandas - DataScience Made Simple
+Website title:	DataScience Made Simple
+URL:	http://www.datasciencemadesimple.com/get-minimum-value-column-python-pandas/
+
+
+Article title:	RPubs - A histogram with Iris Dataset
+Website title:	Rpubs.com
+URL:	https://rpubs.com/Sora/developing-data-product
  
-min value
-http://www.datasciencemadesimple.com/get-minimum-value-column-python-pandas/
+
+Article title:	3.6.10.4. Plot 2D views of the iris dataset — Scipy lecture notes
+Website title:	Scipy-lectures.org
+URL:	http://www.scipy-lectures.org/packages/scikit-learn/auto_examples/plot_iris_scatter.html
+
  
-A histogram with Iris Dataset: Sora Jin June 21st, 2015
-https://rpubs.com/Sora/developing-data-product
+Article title:	3.1. Statistics in Python — Scipy lecture notes
+Website title:	Scipy-lectures.org
+URL:	http://www.scipy-lectures.org/packages/statistics/index.html
+
  
-Plot 2D views of the iris dataset
-http://www.scipy-lectures.org/packages/scikit-learn/auto_examples/plot_iris_scatter.html
+Article title:	Python - IRIS Data visualization and explanation | Kaggle
+Website title:	Kaggle.com
+URL:	https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
+
+
+Article title:	Visualization with Seaborn (Python) | Kaggle
+Website title:	Kaggle.com
+URL:	https://www.kaggle.com/rahulm7/visualization-with-seaborn-python
  
-Statistics in Python
-http://www.scipy-lectures.org/packages/statistics/index.htmlstatistics
+
+Article title:	Iris Data Visualization using Python | Kaggle
+Website title:	Kaggle.com
+URL:	https://www.kaggle.com/aschakra/iris-data-visualization-using-python
+
+
+Article title:	Seaborn Understanding the Weird Parts: pairplot
+Website title:	YouTube
+URL:	https://www.youtube.com/watch?v=cpZExlOKFH4
  
-Python - IRIS Data visualization and explanation
-https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
+
+Website title:	Pandas.pydata.org
+URL:	https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
  
-Visualization with Seaborn (Python)
-https://www.kaggle.com/rahulm7/visualization-with-seaborn-python
+
+Author	PyViz developers
+Article title:	Boxplot chart — HoloViews 1.11.3 documentation
+Website title:	Holoviews.org
+URL:	http://holoviews.org/gallery/demos/bokeh/boxplot_chart.html
  
-Iris Data Visualization using Python
-https://www.kaggle.com/aschakra/iris-data-visualization-using-python
+
+Article title:	An introduction to machine learning with scikit-learn — scikit-learn 0.20.3 documentation
+Website title:	Scikit-learn.org
+URL:	http://scikit-learn.org/stable/tutorial/basic/tutorial.html
+
+
+Article title:	A Complete Guide to K-Nearest-Neighbors with Applications in Python and R
+Website title:	Kevinzakka.github.io
+URL:	https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/
+
+
+Author	Jason Brownlee
+Article title:	Your First Machine Learning Project in Python Step-By-Step
+Website title:	Machine Learning Mastery
+URL:	https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
  
-Seaborn Understanding the Weird Parts: pairplot
-https://www.youtube.com/watch?v=cpZExlOKFH4
+
+Article title:	whatsrupp/iris-classification
+Website title:	GitHub
+URL:	https://github.com/whatsrupp/iris-classification/blob/master/petal_classifier.py
+
+
+Article title:	Machine Learning on IRIS Flower Data set with Python
+Website title:	DiwaShrestha
+URL:	https://diwashrestha.com/2017/09/18/machine-learning-on-iris/
  
-Docs
-https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
+
+Article title:	Scikit Learn - Iris Dataset
+Website title:	YouTube
+URL:	https://www.youtube.com/watch?v=rNHKCKXZde8
  
-http://holoviews.org/gallery/demos/bokeh/boxplot_chart.html
+
+Article title:	Scatterplot with categorical variables — seaborn 0.9.0 documentation
+Website title:	Seaborn.pydata.org
+URL:	http://seaborn.pydata.org/examples/scatterplot_categorical.html
  
-Machine Learning Tutorial
-http://scikit-learn.org/stable/tutorial/basic/tutorial.html
- 
- https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/
- 
- https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
- 
- https://github.com/whatsrupp/iris-classification/blob/master/petal_classifier.py
- 
- https://diwashrestha.com/2017/09/18/machine-learning-on-iris/
- 
- https://www.youtube.com/watch?v=rNHKCKXZde8
- 
- http://seaborn.pydata.org/examples/scatterplot_categorical.html
- 
- IRIS DATASET ANALYSIS (PYTHON)
- http://d4t4.biz/ml-with-scikit-learn/support-vector-machines-project-wip/
- 
- Getting started in scikit-learn with the famous iris dataset
- https://www.youtube.com/watch?v=hd1W4CyPX58
- http://blog.kaggle.com/2015/04/22/scikit-learn-video-3-machine-learning-first-steps-with-the-iris-dataset/
+
+Article title:	Getting started in scikit-learn with the famous iris dataset
+Website title:	YouTube
+URL:	https://www.youtube.com/watch?v=hd1W4CyPX58 
+
+
+Article title:	scikit-learn video #3: Machine learning first steps with the Iris dataset
+Website title:	No Free Hunch
+URL:	http://blog.kaggle.com/2015/04/22/scikit-learn-video-3-machine-learning-first-steps-with-the-iris-dataset/
