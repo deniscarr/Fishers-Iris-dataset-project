@@ -2,13 +2,14 @@
 # Programmer: Denis Carr
 # Date: April 2019
 
-# Importing the libaries for this project: Pandas, Numpy.
-# Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools.
+# Importing the Pandas and Numpy libaries for this project.
+# Pandas is an open source, BSD-licensed library providing easy-to-use data structures and data analysis tools.
 # Numpy is a package for scientific computing with Python
 import numpy as np
 import pandas as pd
 import seaborn as sb
 
+from matplotlib import pyplot as plot
 
 def import_csv():
 	""" Import the data from iris.csv using the panda library """
@@ -28,7 +29,7 @@ def show_summary_stats():
 
 	iris_data = import_csv()
 
-	#Discovering the Shape of the table
+	# Get the shape of the table
 	iris_data.shape
 
 	#Find out unique classification/type of iris flower and the amount
@@ -50,9 +51,7 @@ def show_summary_stats():
 	# Get the standard deviation value of all the column in python pandas
 	iris_data.std()
 
-	#Presenting the Summary Statistics a more readable way
-	# DataFrame.describe: Generates descriptive statistics that summarize 
-	# the central tendency, dispersion and shape of a dataset’s distribution, excluding NaN values.
+	# Present the stats in tabular format
 	iris_summary = iris_data.describe()
 	iris_summary = iris_summary.transpose()
 	print(iris_summary)
@@ -61,17 +60,47 @@ def show_summary_stats():
 
 def show_boxplots(): 
 	""" Compare the distributions of sepal length, sepal width, petal length and petal width using boxplots """
-	print ("Method here")
+
+	iris_data = import_csv()
+
+	# Compare the distribution of sepal length using a boxplot
+	sb.set(style="whitegrid", palette="GnBu_d", rc={'figure.figsize':(11.7,8.27)})
+	title="Compare the Distribution of Sepal Length"
+	sb.boxplot(x="species", y="sepal_length", data=iris_data)
+	plot.title(title, fontsize=30)	# increasing font size
+	plot.show()	# Show the plot
+
+	# Compare the distribution of sepal width using a boxplot
+	sb.set(style="whitegrid", palette="GnBu_d", rc={'figure.figsize':(11.7,8.27)})
+	title="Compare the Distribution of Sepal Width"
+	sb.boxplot(x="species", y="sepal_width", data=iris_data)
+	# increasing font size
+	plot.title(title, fontsize=30)	# increasing font size
+	plot.show()	# Show the plot
+
+	# Compare the distribution of petal length using a boxplot
+	sb.set(style="whitegrid", palette="GnBu_d", rc={'figure.figsize':(11.7,8.27)})
+	title="Compare the Distribution of Petal Length"
+	sb.boxplot(x="species", y="petal_length", data=iris_data)
+	plot.title(title, fontsize=30)	# increasing font size
+	plot.show()	# Show the plot
+
+	# # Compare the distribution of petal width using a boxplot
+	sb.set(style="whitegrid", palette="GnBu_d", rc={'figure.figsize':(11.7,8.27)})
+	title="Compare the distribution of Petal Width"
+	sb.boxplot(x="species", y="petal_width", data=iris_data)
+	plot.title(title, fontsize=30)	# increasing font size
+	plot.show()	# Show the plot
 
 
 
-
+# Display a number based menu to the usre on program start - user must choose 1, 2 or 3 or error is displayed.
 def display_menu():       
 	""" Display menu of choices and prompt user for input choice """
 	print ("\n\n", 22 * "-" , "MENU" , 22 * "-")
-	print ("1. Show summary statistics of the iris data set (including min, max, mean, median and std)")
-	print ("2. Compare the distributions of sepal length, sepal width, petal length and petal width using boxplots")
-	print ("3. Exit")
+	print ("1. Show summary statistics of the iris data set (including min, max, mean, median and std)") # run summary stats method
+	print ("2. Compare the distributions of sepal length, sepal width, petal length and petal width using boxplots") # run diagramming methos
+	print ("3. Exit") # exit program
 	print ("Please enter your choice [1-3]: ")
 	choice = input()
 	return choice
@@ -80,8 +109,8 @@ def display_menu():
 
 if __name__ == "__main__":    
 
-	while True:          ## While loop which will keep going until user wants to exit
-		choice = display_menu()    ## Displays menu
+	while True:          # While loop which will keep going until user wants to exit
+		choice = display_menu()    # Displays menu
 		#print (type(choice))
      
 		if choice == "1":     
@@ -93,4 +122,3 @@ if __name__ == "__main__":
 		else:
         	# Any integer inputs other than values 1-5 - print an error message
 			print("Invalid option selection!! Please try again..")
-
